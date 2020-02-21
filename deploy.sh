@@ -9,6 +9,6 @@ npm run build
 # navigate into the build output directory
 cd docs
 
-git push -f git@github.com:martinboykov/vue-todo-list.git master:gh-pages
+git push -f git@github.com:martinboykov/vuex-todo-list.git master:gh-pages
 
 cd -
