@@ -37,7 +37,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .del {
   font-size: 20px;
   background-color: #ff0000;
@@ -68,57 +68,56 @@ export default {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-}
-.checkbox-group a {
-  text-decoration: underline;
-}
-.checkbox-group input {
-  display: none;
-}
-.checkbox-group label.checkbox {
-  font-size: 20px;
-  color: #303030;
-  padding: 0 20px 0 35px;
-  position: relative;
-  display: block;
-  cursor: pointer;
-  user-select: none;
-  text-align: left;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-}
+  a {
+    text-decoration: underline;
+  }
+  input {
+    display: none;
+  }
 
-.checkbox-group label.checkbox .checkmark {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  height: 20px;
-  width: 20px;
-  transform: translateY(-50%);
-  border: 2px solid #303030;
-}
-.checkbox-group label.checkbox .checkmark:after {
-  display: none;
-  content: "";
-  position: absolute;
-  left: 5px;
-  top: 1px;
-  width: 4px;
-  height: 8px;
-  border: solid #303030;
-  border-width: 0 3px 3px 0;
-  transform: rotate(45deg);
-}
-
-.checkbox-group label.checkbox input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-.checkbox-group label.checkbox input:checked ~ .checkmark:after {
-  display: block;
+  label.checkbox {
+    font-size: 20px;
+    color: #303030;
+    padding: 0 20px 0 35px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+    text-align: left;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    .checkmark {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      height: 20px;
+      width: 20px;
+      transform: translateY(-50%);
+      border: 2px solid #303030;
+      &:after {
+        display: none;
+        content: "";
+        position: absolute;
+        left: 5px;
+        top: 1px;
+        width: 4px;
+        height: 8px;
+        border: solid #303030;
+        border-width: 0 3px 3px 0;
+        transform: rotate(45deg);
+      }
+    }
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+      &:checked ~ .checkmark:after {
+        display: block;
+      }
+    }
+  }
 }
 </style>

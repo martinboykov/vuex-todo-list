@@ -51,7 +51,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 * {
   box-sizing: border-box;
   margin: 0;
@@ -71,11 +71,10 @@ body {
   padding: 0 20px;
   height: 40px;
   cursor: pointer;
-}
-
-.btn:hover {
+  &:hover {
   background-color: #666;
   color: #000;
+}
 }
 
 #app {

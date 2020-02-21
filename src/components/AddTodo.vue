@@ -30,7 +30,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .container {
   padding: 20px 0;
 }
@@ -51,19 +51,19 @@ input[type="text"] {
   border-radius: 0;
   border: 1px solid #000;
   flex: 10;
-}
-input[type="text"]:focus {
-  box-shadow: 0px 0px 12px -3px rgba(0, 0, 0, 0.3);
+  &:focus {
+    box-shadow: 0px 0px 12px -3px rgba(0, 0, 0, 0.3);
+  }
 }
 
 input[type="submit"] {
   color: #fff;
   background-color: #000;
   flex: 3;
-}
-input[type="submit"]:hover {
-  color: #fff;
-  background-color: #000;
-  opacity: 0.8;
+  &:hover {
+    color: #fff;
+    background-color: #000;
+    opacity: 0.8;
+  }
 }
 </style>
