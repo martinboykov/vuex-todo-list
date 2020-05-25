@@ -1,25 +1,4 @@
-# vuex_crash_todolist -
-## Source: [Vuex Crash Course | State Management](https://www.youtube.com/watch?v=5lVQgZzLMHc&t=)
+# **VUEX-TODO-LIST**
+VUEX-TODO-LIST is Vuex Web Application for educational purposes. It represents simple Todo list width database using mockapi.io.
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+#### Demo: <a href="https://martinboykov.github.io/vue-todo-list/#/" target="_blank">https://martinboykov.github.io/vue-todo-list/#/</a>
